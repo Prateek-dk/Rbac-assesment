@@ -77,3 +77,7 @@ Expected Output: HTTP 200 OK returning allowed: false due to the strict rule: "m
 How it works: Querying the LLM assistant via POST /chat with the question: "Who changed JOB-000001 and what is its current status?".
 
 Expected Output: HTTP 200 OK returning an authoritative summary derived from immutable audit logs and job state tables, showing the exact maker, authorization attempts, and current stage.
+
+
+All the images and input are in the images directory
+
