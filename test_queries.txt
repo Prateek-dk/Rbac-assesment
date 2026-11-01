@@ -1,0 +1,12 @@
+# Use POST /chat with {"question":"..."} and a valid bearer token.
+Why can u_checker_limited check JOB-000010 but u_maker_checker_conflict cannot check JOB-000001?
+Who could have changed JOB-000001 on 2026-10-03?
+Show the history for JOB-000001.
+Why was u_client_01 denied access to JOB-000002?
+Can u_checker_import_branch check an import job in branch_01 for client_02?
+Can u_checker_import_branch check an export job in branch_01 for client_02?
+Can u_checker_import_branch check an import job in branch_02 for client_02?
+What happens if the person responsible for a job is absent?
+Who has checker access for client_01?
+Explain why a maker cannot approve their own work.
+Did the parser create or update any jobs overnight?
