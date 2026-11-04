@@ -1,0 +1,44 @@
+{
+  "authorize": [
+    {
+      "user_id": "u_checker_limited",
+      "job_id": "JOB-000010",
+      "action": "check"
+    },
+    {
+      "user_id": "u_maker_checker_conflict",
+      "job_id": "JOB-000001",
+      "action": "check"
+    },
+    {
+      "user_id": "u_client_01",
+      "job_id": "JOB-000002",
+      "action": "read"
+    }
+  ],
+  "chat": [
+    "Why can u_checker_limited check JOB-000010 but u_maker_checker_conflict cannot check JOB-000001?",
+    "Show the history for JOB-000001.",
+    "Who could have changed JOB-000001 on 2026-10-03?",
+    "Why was u_client_01 denied access to JOB-000002?"
+  ],
+  "workflow": [
+    {
+      "job_id": "JOB-000001",
+      "action": "check",
+      "expected": "denied: maker-checker conflict"
+    },
+    {
+      "job_id": "JOB-000002",
+      "action": "cancel",
+      "reason": "Duplicate shipment",
+      "expected": "admin or scoped cancel permission"
+    },
+    {
+      "job_id": "JOB-000003",
+      "action": "reopen",
+      "reason": "Correction approved",
+      "expected": "admin break-glass"
+    }
+  ]
+}
